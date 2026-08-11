@@ -1,0 +1,18 @@
+{
+  "updated": "2026-07-30 16:10 EDT",
+  "plots": [
+    {
+      "label": "No cut",
+      "path": "plots/DPS_2024_pt_y_nocut.png"
+    },
+    {
+      "label": "Detector cuts",
+      "path": "plots/DPS_2024_pt_y_detector.png"
+    },
+    {
+      "label": "Analysis cuts",
+      "path": "plots/DPS_2024_pt_y_analysis.png"
+    }
+  ],
+  "plot_count": 3
+}
