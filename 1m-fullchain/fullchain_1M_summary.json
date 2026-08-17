@@ -1,0 +1,68 @@
+{
+  "counts": {
+    "gen_analysis_fiducial": 49,
+    "gen_detector_fiducial": 87,
+    "gen_signal": 435,
+    "miniaod_events": 1022,
+    "reco_analysis": 44,
+    "reco_analysis_matched_in_fiducial": 44,
+    "reco_candidate": 128,
+    "reco_gen_matched": 69,
+    "reco_gen_matched_in_fiducial": 61
+  },
+  "cutflow": {
+    ">=4 reco muons": 848,
+    "GEN Jpsi+Z to 4mu": 435,
+    "GEN detector fiducial": 87,
+    "OS four-muon pairing": 690,
+    "all MiniAOD": 1022,
+    "four-muon GEN match": 69,
+    "mass windows": 128,
+    "reco analysis cuts": 44,
+    "reco detector cuts": 62
+  },
+  "definitions": {
+    "acceptance": "GEN selection divided by valid GEN J/psi+Z to 4mu",
+    "efficiency": "GEN-matched reconstructed selection divided by GEN detector-fiducial signal",
+    "not_included": [
+      "official muon ID scale factors",
+      "frozen HLT path selection",
+      "trigger-object matching"
+    ],
+    "reco_gen_matching": "four unique muons, charge-compatible, deltaR < 0.1"
+  },
+  "input": "/home/storage2/users/gjinjing/JpsiZ_Run2Run3_MC/results/fullchain_1M/jpsiz_ntuple_1M_merged.root",
+  "ratios": {
+    "acceptance_times_baseline_efficiency": {
+      "binomial_stat_error": 0.014457088230973303,
+      "denominator": 435,
+      "numerator": 44,
+      "value": 0.10114942528735632
+    },
+    "baseline_analysis_efficiency": {
+      "binomial_stat_error": 0.053602085494867426,
+      "denominator": 87,
+      "numerator": 44,
+      "value": 0.5057471264367817
+    },
+    "gen_analysis_acceptance": {
+      "binomial_stat_error": 0.015158555107447222,
+      "denominator": 435,
+      "numerator": 49,
+      "value": 0.11264367816091954
+    },
+    "gen_detector_acceptance": {
+      "binomial_stat_error": 0.019178532059415367,
+      "denominator": 435,
+      "numerator": 87,
+      "value": 0.2
+    },
+    "reco_match_efficiency": {
+      "binomial_stat_error": 0.049076401696984163,
+      "denominator": 87,
+      "numerator": 61,
+      "value": 0.7011494252873564
+    }
+  },
+  "sample": "DPS Run3 2024 full chain, 1,000,000 generator attempts"
+}
