@@ -1,117 +1,13 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>J/ψ + Z → 4μ MC Analysis</title><style>
-:root{--ink:#172033;--muted:#637083;--paper:#f5f7fb;--card:#fff;--blue:#2457d6;
---cyan:#0f8b8d;--amber:#d97706;--red:#c2413b;--line:#dce2ec}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);
-font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.wrap{max-width:1240px;margin:auto;padding:32px 24px 72px}.hero{padding:34px;border-radius:24px;
-background:linear-gradient(125deg,#14213d,#2457d6);color:white;box-shadow:0 18px 50px #14213d2b}
-.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.74}.hero h1{
-font-size:clamp(32px,5vw,58px);line-height:1.03;margin:12px 0}.hero p{max-width:760px;
-font-size:18px;line-height:1.6;opacity:.86}.stamp{margin-top:24px;font-size:13px;opacity:.7}
-.grid{display:grid;gap:18px}.metrics{grid-template-columns:repeat(4,1fr);margin:22px 0}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;
-box-shadow:0 8px 26px #24324b0a}.metric .value{font-size:31px;font-weight:750;margin-top:8px}
-.metric .label,.subtle{color:var(--muted);font-size:13px}.section{margin-top:38px}.section h2{
-font-size:25px;margin:0 0 16px}.status-grid{grid-template-columns:1fr 1fr}.status-head{
-display:flex;justify-content:space-between;gap:20px;align-items:center}.pill{border-radius:999px;
-padding:7px 11px;font-size:12px;font-weight:700;background:#e8eefc;color:var(--blue)}
-.pill.warn{background:#fff0d8;color:#9a5700}.status-card h3{font-size:22px;margin:0}.facts{
-display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:22px 0}.fact{border-left:3px solid
-var(--cyan);padding-left:12px}.fact strong{display:block;font-size:18px}.fact span{font-size:12px;
-color:var(--muted)}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;
-overflow-wrap:anywhere}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{
-position:relative;background:white;border:1px solid var(--line);border-radius:14px;padding:18px}
-.step:not(:last-child):after{content:"→";position:absolute;right:-17px;top:50%;z-index:2;
-color:var(--blue);font-weight:800}.step b{display:block;margin-bottom:6px}.plots{
-grid-template-columns:repeat(3,1fr)}figure{margin:0;background:white;border:1px solid var(--line);
-border-radius:16px;overflow:hidden}figure img{width:100%;display:block;aspect-ratio:1.25/1;
-object-fit:contain;background:#fff}figcaption{padding:14px 16px;font-weight:650}
-.plots{grid-template-columns:1fr}figure img{aspect-ratio:auto;height:auto;padding:8px}
-.cuts{grid-template-columns:repeat(3,1fr)}.cut-index{font-size:12px;color:var(--blue);
-font-weight:800}.cut h3{margin:8px 0}.cut p,.todo li{color:var(--muted);line-height:1.55}
-.todo{margin:0;padding-left:22px}.todo li{padding:5px}.terminal{white-space:pre-wrap;background:#101827;
-color:#cfddf6;border-radius:14px;padding:18px;max-height:300px;overflow:auto;font-size:12px}
-.empty{padding:48px;text-align:center;color:var(--muted);border:1px dashed #b9c2d1;border-radius:16px}
-footer{margin-top:48px;color:var(--muted);font-size:12px}
-@media(max-width:900px){.metrics{grid-template-columns:repeat(2,1fr)}
-.status-grid,.cuts{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}
-.step:not(:last-child):after{display:none}}@media(max-width:560px){.wrap{padding:16px 14px 48px}
-.hero{padding:24px}.metrics,.plots,.flow{grid-template-columns:1fr}.facts{grid-template-columns:1fr}}
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>J/ψ + Z → 4μ MC Results</title>
+<style>
+:root{--ink:#172033;--muted:#637083;--paper:#f4f7fb;--card:#fff;--blue:#2457d6;--cyan:#0f8b8d;--line:#dce2ec}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif}.wrap{max-width:1180px;margin:auto;padding:32px 24px 72px}.hero{padding:38px;border-radius:24px;background:linear-gradient(125deg,#14213d,#2457d6);color:#fff}.hero h1{font-size:clamp(34px,5vw,58px);margin:10px 0}.hero p{max-width:800px;line-height:1.6;opacity:.86}.tag{font-size:12px;letter-spacing:.15em;text-transform:uppercase;opacity:.72}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 8px 28px #24324b0a}.card h2{margin:0 0 8px;font-size:28px}.kicker{color:var(--blue);font-weight:750}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.metric{border-left:3px solid var(--cyan);padding-left:12px}.metric strong{display:block;font-size:22px}.metric span,.muted{color:var(--muted);font-size:13px;line-height:1.5}.button{display:inline-block;padding:11px 16px;border-radius:999px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700}.note{margin-top:24px;padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff;line-height:1.6}@media(max-width:760px){.grid{grid-template-columns:1fr}.wrap{padding:16px}.hero{padding:26px}}
 </style></head><body><main class="wrap">
-<header class="hero"><div class="eyebrow">CMS · MC production notebook</div>
-<h1>J/ψ + Z → 4μ MC Analysis</h1><p>A reproducible, visual summary of private MC production,
-generator validation, acceptance cuts and physics plots.</p>
-<div class="stamp">Jinjing · CMS Run 2 + Run 3 · Updated 2026-08-05 09:02 EDT</div></header>
-<section class="grid metrics">
-<article class="card metric"><div class="label">DPS requested</div><div class="value">200,000</div><div class="subtle">events</div></article>
-<article class="card metric"><div class="label">CRAB jobs</div><div class="value">100</div><div class="subtle">2,000 events/job</div></article>
-<article class="card metric"><div class="label">Pilot valid J/ψ+Z</div><div class="value">149,570</div><div class="subtle">of 200,000</div></article>
-<article class="card metric"><div class="label">Preliminary σ(DPS)</div><div class="value">0.101</div><div class="subtle">pb</div></article>
+<header class="hero"><div class="tag">CMS · DPS MC validation</div><h1>J/ψ + Z → 4μ</h1><p>Side-by-side results for the original 200k generator-level study and the new 1M-attempt Run 3 full-chain sample through MiniAOD and reconstruction-level analysis.</p></header>
+<section class="grid">
+<article class="card"><div class="kicker">GEN-LEVEL REFERENCE</div><h2>200k study</h2><p class="muted">Generator-only DPS production used for high-statistics kinematic yield and acceptance maps.</p><div class="metrics"><div class="metric"><strong>200,000</strong><span>requested GEN events</span></div><div class="metric"><strong>149,570</strong><span>valid GEN J/ψ+Z→4μ</span></div><div class="metric"><strong>481</strong><span>detector-cut events</span></div><div class="metric"><strong>117</strong><span>analysis-cut events</span></div></div><a class="button" href="200k/">Open 200k results</a></article>
+<article class="card"><div class="kicker">FULL CHAIN · RUN 3 2024</div><h2>1M-attempt study</h2><p class="muted">GEN-SIM → DIGI/HLT → RECO → MiniAOD, analyzed with MiniAOD reco objects and full GEN truth from the paired RECO/AODSIM files.</p><div class="metrics"><div class="metric"><strong>1,000,000</strong><span>generator attempts</span></div><div class="metric"><strong>1,022</strong><span>MiniAOD events</span></div><div class="metric"><strong>20.0%</strong><span>GEN detector acceptance</span></div><div class="metric"><strong>50.6%</strong><span>baseline analysis efficiency</span></div></div><a class="button" href="1m-fullchain/">Open 1M full-chain results</a></article>
 </section>
-<section class="section"><h2>Production status</h2><div class="grid status-grid">
-<article class="card status-card"><div class="status-head"><h3>DPS</h3><span class="pill">Completed (100/100)</span></div>
-<div class="facts"><div class="fact"><strong>Pythia8 SecondHard</strong><span>generator mode</span></div>
-<div class="fact"><strong>200,000</strong><span>requested events</span></div></div>
-<p>DPS physics configuration validated; J/ψ and Z are both forced to μ+μ−.</p><p class="subtle">Output</p><code>/store/user/gjinjing/JpsiZ/MC2024/DPS_GENtree_v2/</code></article>
-<article class="card status-card"><div class="status-head"><h3>SPS</h3><span class="pill warn">Needs valid ME/gridpack</span></div>
-<div class="facts"><div class="fact"><strong>0</strong><span>validated events</span></div>
-<div class="fact"><strong>Not selected</strong><span>generator mode</span></div></div>
-<p>Legacy Pythia fragments do not generate a genuine single-hard-scatter J/ψ+Z sample.</p></article></div></section>
-<section class="section"><h2>Analysis flow</h2><div class="flow">
-<div class="step"><b>01 · Generate</b><span class="subtle">DPS/SPS physics configuration</span></div>
-<div class="step"><b>02 · Validate</b><span class="subtle">decays, cross section, event content</span></div>
-<div class="step"><b>03 · Select</b><span class="subtle">no cut → detector → analysis</span></div>
-<div class="step"><b>04 · Compare</b><span class="subtle">J/ψ and Z pT versus rapidity</span></div>
-</div></section>
-<section class="section"><h2>Generator-level event-yield TH2D maps</h2>
-<p class="subtle">The color scale and printed bin values show the weighted MC event yield in each pT-rapidity bin, before cuts, after generator-level detector fiducial cuts, and after the tentative analysis cuts.</p>
-<div class="grid plots"><figure><a href="plots/DPS_2024_pt_y_nocut.png"><img loading="lazy" src="plots/DPS_2024_pt_y_nocut.png" alt="No cut pT versus rapidity TH2D"></a><figcaption>No cut · DPS full 200k</figcaption></figure><figure><a href="plots/DPS_2024_pt_y_detector.png"><img loading="lazy" src="plots/DPS_2024_pt_y_detector.png" alt="Detector cuts pT versus rapidity TH2D"></a><figcaption>Detector cuts · DPS full 200k</figcaption></figure><figure><a href="plots/DPS_2024_pt_y_analysis.png"><img loading="lazy" src="plots/DPS_2024_pt_y_analysis.png" alt="Analysis cuts pT versus rapidity TH2D"></a><figcaption>Analysis cuts · DPS full 200k</figcaption></figure></div></section>
-<section class="section"><h2>Acceptance maps</h2>
-<article class="card"><h3>How the acceptance is calculated</h3>
-<p>These are <strong>generator-level, bin-by-bin acceptances</strong>, evaluated separately in the J/ψ and Z <em>(p<sub>T</sub>, y)</em> planes. For each bin <em>i</em>,</p>
-<p><strong>A<sub>det</sub>(i) = N<sub>detector cuts</sub>(i) / N<sub>valid GEN J/ψ+Z→4μ</sub>(i)</strong><br>
-<strong>A<sub>ana</sub>(i) = N<sub>analysis cuts</sub>(i) / N<sub>valid GEN J/ψ+Z→4μ</sub>(i)</strong>.</p>
-<p>The denominator contains events with a valid generated J/ψ and Z, both decaying to μ<sup>+</sup>μ<sup>−</sup>. The numerator is the subset of those same events passing the detector or tentative analysis selection defined below. A J/ψ map uses the generated J/ψ coordinates for binning; a Z map uses the generated Z coordinates. Thus the maps measure kinematic/fiducial acceptance, not reconstruction, identification or trigger efficiency.</p>
-<p>ROOT divides the numerator and denominator TH2Ds with the binomial option <code>B</code>. For an unweighted bin, the displayed statistical uncertainty corresponds to <strong>σ<sub>A</sub> = √[A(1−A)/N<sub>den</sub>]</strong>. Bins with zero denominator are left blank. To avoid displaying unstable numbers, values are printed on the PNG only when <strong>N<sub>den</sub> ≥ 20</strong>; the complete maps and stored uncertainties remain in the ROOT output.</p></article>
-<div class="grid plots"><figure><a href="acceptance/DPS_2024_acceptance_detector_jpsi.png"><img loading="lazy" src="acceptance/DPS_2024_acceptance_detector_jpsi.png" alt="J/#psi detector acceptance"></a><figcaption>J/#psi detector acceptance · DPS full 200k</figcaption></figure><figure><a href="acceptance/DPS_2024_acceptance_detector_z.png"><img loading="lazy" src="acceptance/DPS_2024_acceptance_detector_z.png" alt="Z detector acceptance"></a><figcaption>Z detector acceptance · DPS full 200k</figcaption></figure><figure><a href="acceptance/DPS_2024_acceptance_analysis_jpsi.png"><img loading="lazy" src="acceptance/DPS_2024_acceptance_analysis_jpsi.png" alt="J/#psi analysis acceptance"></a><figcaption>J/#psi analysis acceptance · DPS full 200k</figcaption></figure><figure><a href="acceptance/DPS_2024_acceptance_analysis_z.png"><img loading="lazy" src="acceptance/DPS_2024_acceptance_analysis_z.png" alt="Z analysis acceptance"></a><figcaption>Z analysis acceptance · DPS full 200k</figcaption></figure></div></section>
-<section class="section"><h2>Selection definitions</h2><div class="grid cuts"><article class="card cut"><div class="cut-index">STAGE 1</div><h3>No cut</h3><p>Valid generator-level J/ψ + Z → 4μ candidate.</p></article><article class="card cut"><div class="cut-index">STAGE 2</div><h3>Detector cuts</h3><p>|ημ| &lt; 2.4; J/ψ muon piecewise pT threshold; Z muon pT &gt; 5 GeV.</p></article><article class="card cut"><div class="cut-index">STAGE 3</div><h3>Analysis cuts</h3><p>Detector cuts + pT(J/ψ) &gt; 8 GeV, |y(J/ψ)| &lt; 2.4, 2.9 &lt; mμμ(J/ψ) &lt; 3.3 GeV, 81 &lt; mμμ(Z) &lt; 101 GeV, Z muons pT &gt; 25/15 GeV.</p></article></div></section>
-<section class="section"><h2>Current pilot yields</h2><div class="grid metrics">
-<article class="card metric"><div class="label">Generated</div><div class="value">200,000</div></article>
-<article class="card metric"><div class="label">Valid J/ψ+Z</div><div class="value">149,570</div></article>
-<article class="card metric"><div class="label">Detector cuts</div><div class="value">481</div></article>
-<article class="card metric"><div class="label">Analysis cuts</div><div class="value">117</div></article>
-</div></section>
-<section class="section grid status-grid"><article class="card"><h2>Next steps</h2><ol class="todo"><li>Review the full-200k TH2D shapes and selection efficiencies with the analysis group.</li><li>Freeze or revise the tentative analysis cuts after the group review.</li><li>Combine per-job cross-section estimates with inverse-variance weighting.</li><li>Choose and validate a genuine SPS matrix-element/gridpack workflow.</li></ol></article>
-<article class="card"><h2>Data location</h2><p class="subtle">THU workspace</p><code>/home/storage2/users/gjinjing/JpsiZ_Run2Run3_MC</code>
-<p class="subtle">CRAB task</p><code>260730_185201:gjinjing_crab_DPS_JpsiZTo4Mu_GENtree_2024_v2_200k</code></article></section>
-<section class="section"><h2>Latest CRAB snapshot</h2><div class="terminal">Rucio client intialized for account gjinjing
-CRAB project directory:		/home/storage2/users/gjinjing/JpsiZ_Run2Run3_MC/production/private/DPS_GENtree_2024_v1/crab_projects/crab_DPS_JpsiZTo4Mu_GENtree_2024_v2_200k
-Task name:			260730_185201:gjinjing_crab_DPS_JpsiZTo4Mu_GENtree_2024_v2_200k
-Grid scheduler - Task Worker:	crab3@vocms0199.cern.ch - crab-prod-tw01
-Status on the CRAB server:	SUBMITTED
-Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/260730_185201%3Agjinjing_crab_DPS_JpsiZTo4Mu_GENtree_2024_v2_200k
-Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&amp;var-user=gjinjing&amp;var-task=260730_185201%3Agjinjing_crab_DPS_JpsiZTo4Mu_GENtree_2024_v2_200k&amp;from=1785433921000&amp;to=now
-Status on the scheduler:	COMPLETED
-
-Jobs status:                    finished     		100.0% (100/100)
-
-No publication information (publication has been disabled in the CRAB configuration file)
-
-Warning: the max jobs memory is less than 70% of the task requested value (2500 MB), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = &#x27;Automatic&#x27;) in a new task.
-
-Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = &#x27;Automatic&#x27;) in a new task.
-
-Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = &#x27;Automatic&#x27;) in a new task
-
-Summary of run jobs:
- * Memory: 67MB min, 798MB max, 703MB ave
- * Runtime: 0:04:27 min, 0:08:29 max, 0:04:35 ave
- * CPU eff: 14% min, 71% max, 46% ave
- * Waste: 12:00:11 (61% of total)
-
-Log file is /home/storage2/users/gjinjing/JpsiZ_Run2Run3_MC/production/private/DPS_GENtree_2024_v1/crab_projects/crab_DPS_JpsiZTo4Mu_GENtree_2024_v2_200k/crab.log
-</div></section>
-<footer>Generated by the J/ψ+Z report workflow. Edit report_config.json for curated physics notes; plots and CRAB status are collected automatically.</footer>
+<aside class="note"><strong>Interpretation note.</strong> “1M” denotes generator attempts, not one million MiniAOD events. Generator filters leave 1,022 events in the final MiniAOD sample. The 200k page is a generator-level reference; only the full-chain page provides reconstruction efficiency. The current efficiency is baseline MC efficiency and does not yet include official muon scale factors or frozen trigger-object matching.</aside>
 </main></body></html>
